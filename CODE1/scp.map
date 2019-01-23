@@ -1,0 +1,19 @@
+{
+  split ( WT,w,"");
+  split ( $4,a,"");
+
+  for(i=1;i<=length(w);i=i+1) {
+    if ( a[i]!=w[i]) {
+      c = c+1;
+      printf ( "%s\t%d\t%s\t",w[i],i,a[i]);
+    };
+  };
+
+  printf ( "%s\t%s\n", $3, $2)
+}
+END{
+  split ( WT,w,"");
+  for(i=1;i<=length(w);i=i+1) {
+    printf ( "%s\t%d\t%s\t0.000\t0.000\n",w[i],i,w[i]);
+  }
+}
