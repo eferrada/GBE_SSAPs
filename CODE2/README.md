@@ -1,5 +1,5 @@
 
-# CODE 2: Calculating the fraction of sites with significant differences. 
+# CODE 2: Calculating the fraction of sites with significantly different amino acid preferences. 
 
 Matlab scripts in this directory randomize amino acid preferences per site according to Eq.6 in the paper.
 In addition, the scripts implement the method publish in Doud et al. (2015), for the comparison of two site-specific
