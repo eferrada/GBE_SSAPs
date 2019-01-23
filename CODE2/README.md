@@ -47,7 +47,7 @@ function [  ] = rangeCorr ( dom1, dom2, sampleSize )
  Two output files: **[dom1]_[dom2]_res.dat** and **[dom1]_[dom2]_pval.dat** are printed at "./DATA/RESULTs/"
 
 ### [dom1]_[dom2]_res.dat:
- This output file list the sites found significantly different at varying correlations.  
+ This output file lists the sites found significantly different at varying correlations.  
  It has the following format:
 
 ```
