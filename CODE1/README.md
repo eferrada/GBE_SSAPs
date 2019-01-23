@@ -1,6 +1,6 @@
 
 
-# CODE 1: Generating site-specific amino acid preference profiles from crystalographic data.
+# CODE 1: Generating site-specific amino acid preference profiles from structure data.
 
 
 ## Setting up folders:
@@ -18,8 +18,8 @@ mkdir MUTANT_FILEs
  We use the following FoldX commands to reconstruct residue sidechains and to optimize the initial thermodynamic stability of the structure:
 
 ```
-./foldx --command=ReconstructSideChains --pdb-dir=./STRs --pdb=d2gi9a_.pdb --out-dir=./OUTs/ 
-./foldx -c RepairPDB --pdb-dir=./OUTs --pdb=Rebuilt_d2gi9a_.pdb --out-dir=./REPAIRs/
+./foldx --command=ReconstructSideChains --pdb-dir=./STRs --pdb=d2gi9a_.pdb --output-dir=./OUTs/ 
+./foldx -c RepairPDB --pdb-dir=./OUTs --pdb=Rebuilt_d2gi9a_.pdb --output-dir=./REPAIRs/
 ```
 
 With foldx, the executable foldx software. The file "rotabase.txt" must be in the same folder as foldx. 
@@ -43,7 +43,7 @@ awk -f scp.mut -v WT=MQYKLILNGKTLKGETTTEAVDAATAEKVFKQYANDNGVDGEWTYDDATKTFTVTE AA
 The following foldX command generate the single mutant models and measure stability of each, 5 times.
 
 ```
-../foldx --command=BuildModel --pdb-dir=../REPAIRs/ --pdb=Rebuilt_d2gi9a__Repair.pdb --mutant-file=../MUTANT_FILEs/d2gi9a_/mutant_file.txt --output-dir=./d2gi9a_/ --wildtype=MQYKLILNGKTLKGETTTEAVDAATAEKVFKQYANDNGVDGEWTYDDATKTFTVTE --numberOfRuns=5 --out-pdb=false
+./foldx --command=BuildModel --pdb-dir=./REPAIRs/ --pdb=Rebuilt_d2gi9a__Repair.pdb --mutant-file=./MUTANT_FILEs/d2gi9a_/mutant_file.txt --output-dir=./MODELs/d2gi9a_/ --wildtype=MQYKLILNGKTLKGETTTEAVDAATAEKVFKQYANDNGVDGEWTYDDATKTFTVTE --numberOfRuns=5 --out-pdb=false
 ```
 
 ## Filtering FoldX output and generating SSAP profiles:
