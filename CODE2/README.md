@@ -2,7 +2,7 @@
 # CODE 2: Calculating the fraction of sites with significantly different amino acid preferences. 
 
 Matlab scripts in this directory randomize amino acid preferences per site according to Eq.6 in the paper.
-In addition, the scripts implement the method publish in Doud et al. (2015), for the comparison of two site-specific
+In addition, the scripts implement the method published by Doud et al. (2015), for the comparison of pairs of site-specific
 amino acid preference (SSAP) profiles, based on Jensen-Shannon distance and an exact permutation test.  
 For details, see Method section of the paper and Doud et al. (2015) MBE article.
 
