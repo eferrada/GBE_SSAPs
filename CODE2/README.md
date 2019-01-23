@@ -3,8 +3,7 @@
 
 Matlab scripts in this directory randomize amino acid preferences per site according to Eq.6 in the paper.
 In addition, the scripts implement the method published by Doud et al. (2015), for the comparison of pairs of site-specific
-amino acid preference (SSAP) profiles, based on Jensen-Shannon distance and an exact permutation test.  
-For details, see Method section of the paper and Doud et al. (2015) MBE article.
+amino acid preference (SSAP) profiles, based on Jensen-Shannon distance and an exact permutation test. For details, see Method section of the paper and Doud et al. (2015) MBE article.
 
 ## Example for running the code:
 ```
@@ -16,13 +15,12 @@ For details, see Method section of the paper and Doud et al. (2015) MBE article.
 ```
 function [  ] = rangeCorr ( dom1, dom2, sampleSize )
 % This function compares the preference profiles between the equivalent sites of
-% dom1 and dom2, by generating __sampleSize__ randomizations of replicates with Pearson correlation coefficients ranging
+% dom1 and dom2, by generating "sampleSize" randomizations of replicates with Pearson correlation coefficients ranging
 % between 0.5 and 1.0.
 %
 % dom1: ID domain 1.
 % dom2: ID domain 2.
-% range1, range2 : lower and upper range of Confidence Intervals.
-% sampleSize: Total samples
+% sampleSize: Total randomization samples
 
 ```
 
