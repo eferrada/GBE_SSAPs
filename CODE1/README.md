@@ -72,7 +72,7 @@ BEGIN{
   else {
     ddg = $4;
     Pi  = exp(-ddg/kT)/(1+exp(-ddg/kT));
-    print $1"\t"$2"\t"$3"\t"int(1000*Pi/a[$2])/1000; #"\t"int(1000*$4)/1000; 
+    print $1"\t"$2"\t"$3"\t"int(1000*Pi/a[$2])/1000; 
   }
 }
 
@@ -123,7 +123,7 @@ END{
 
     T = d2[i];
 
-    print d1[i]"\t"d2[i]"\t"d3[i]"\t"int(1000*Pi/a[T])/1000; #"\t"int(1000*d4[i])/1000;
+    print d1[i]"\t"d2[i]"\t"d3[i]"\t"int(1000*Pi/a[T])/1000; 
   }
 }
 ```
@@ -164,14 +164,14 @@ END{
     Pi = exp(-(ddg)); 
 
     T = d2[i]; 
-    print d1[i]"\t"d2[i]"\t"d3[i]"\t"int(1000*Pi/a[T])/1000ñ #"\t"int(1000*d4[i])/1000; 
+    print d1[i]"\t"d2[i]"\t"d3[i]"\t"int(1000*Pi/a[T])/1000; 
   }
 }
 
 ```
 
 
- Example of pipeline to generate SSAP profile using the maximum stability model:
+ Example of pipeline to generate SSAP profile using the the stability models:
 
 ```
 tail -1064 MUTANT_FILEs/d2gi9a_/mutant_file.txt > a.1
@@ -185,7 +185,7 @@ awk -f gaussian.awk a.3 a.4 > SSAPs/d2gi9a_.P2
 awk -f sigmoidal.awk a.3 a.4 > SSAPs/d2gi9a_.P3 
 ```
 
- The file **d2gi9a_.P1**, summarizes the SSAP profile derived from FoldX and the maximum stability model:
+ The file **d2gi9a_.P***, summarizes the SSAP profile derived from FoldX and the maximum stability model:
 
 ```
 #ResID  NRes    aaID     SSAP
