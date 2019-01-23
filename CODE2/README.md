@@ -94,4 +94,8 @@ function [  ] = rangeCorr ( dom1, dom2, sampleSize )
 
  The input parameter and outputs are explained as part of the documentation of each script.
 
-
+ For details regarding the statistical analyses and the signigicance level reported, see Results section (i.e. **Reproducibility and Comparison of Computationally Predicted Amino Acid Preference Profiles**) of the paper (pages 126-127).
+ 
+ 
+ 
+ 
