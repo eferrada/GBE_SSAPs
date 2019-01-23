@@ -1,7 +1,6 @@
 
-# Supplementary Material for:
-## "The site-specific amino acid preferences of homologous proteins depend on sequence divergence"
-### Genome Biol. Evol. 11(1):121–135. (doi:10.1093/gbe/evy261).
+# Supplementary Material:
+### "The site-specific amino acid preferences of homologous proteins depend on sequence divergence". Genome Biol. Evol. 11(1):121–135. (doi:10.1093/gbe/evy261).
 
 *****
 
