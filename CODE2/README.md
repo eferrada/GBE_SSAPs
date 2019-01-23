@@ -10,7 +10,7 @@ amino acid preference (SSAP) profiles, based on Jensen-Shannon distance and an e
 /{PATH_TO_MATLAB}/bin/matlab -nosplash < script.example.exe
 ```
 
- The script file above calls the main function **_rangeCorr_** (e.g. __rangeCorr('d2gi9a_', 'd1em7a_', 5)__ )
+ The script file above calls the main function **_rangeCorr_** (e.g. rangeCorr('d2gi9a_', 'd1em7a_', 5) )
 
 ```
 function [  ] = rangeCorr ( dom1, dom2, sampleSize )
