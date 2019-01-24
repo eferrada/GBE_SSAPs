@@ -171,7 +171,7 @@ END{
 ```
 
 
- Example of pipeline to generate SSAP profile using the the stability models:
+## Example of pipeline to generate SSAP profile using the the stability models:
 
 ```
 tail -1064 MUTANT_FILEs/d2gi9a_/mutant_file.txt > a.1
